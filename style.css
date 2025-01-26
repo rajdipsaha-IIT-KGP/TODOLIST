@@ -79,8 +79,8 @@ body {
     margin: 8px 0;
     padding: 10px;
     border-radius: 5px;
+    position: relative;
     display: flex;
-    position:relative;
     justify-content: space-between; /* Aligns text and button */
     align-items: center;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -95,9 +95,9 @@ body {
 .Delete {
     background: #ff4d4d;
     color: white;
+    position: absolute;
     border: none;
     padding: 5px 10px;
-    position:absolue;
     top:5px;
     right:10px;
     border-radius: 5px;
