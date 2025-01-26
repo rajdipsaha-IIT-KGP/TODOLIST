@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Container */
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+.search {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search:focus {
+    border-color: #6A0DAD; /* Purple border on focus */
+    outline: none;
+}
+
+/* Add Task Button */
+.add {
+    padding: 10px 15px;
+    background: #6A0DAD; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.add:hover {
+    background: #4B0082; /* Darker purple */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* To-Do List */
+#to-do-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* Task Items */
+.tasks {
+    background: #e3e3e3;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Aligns text and button */
+    align-items: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Task Hover Effect */
+.tasks:hover {
+    transform: scale(1.02);
+}
+
+/* Delete Button */
+.Delete {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.Delete:hover {
+    background: #e60000;
+}
+
+/* Task Fade-Out Effect */
+.tasks.removed {
+    opacity: 0;
+    transform: translateX(30px);
+}
