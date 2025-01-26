@@ -80,6 +80,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     display: flex;
+    position:relative;
     justify-content: space-between; /* Aligns text and button */
     align-items: center;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -96,6 +97,9 @@ body {
     color: white;
     border: none;
     padding: 5px 10px;
+    position:absolue;
+    top:5px;
+    right:10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
